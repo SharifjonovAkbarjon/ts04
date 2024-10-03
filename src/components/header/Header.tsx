@@ -42,6 +42,7 @@ export default class Header extends Component<{}, HeaderState> {
                     {
                         this.state.data?.map((item: Product): JSX.Element => (
                             <div key={item.id}>
+                                <img className='image__api' src={item.images[0]} alt="Item image" />
                                 <h3>{item.price}</h3>
                                 <h3>{item.title}</h3>
                                 <h3>{item.description}</h3>
